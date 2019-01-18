@@ -76,7 +76,8 @@ Navigation
 #display {
   height: 70vh;
   width: 100vw;
-  background-color: #ccc;
+  background: #ccc;
+  background-size: contain;
 }
 
 /*************** 
@@ -102,6 +103,7 @@ Navigation
   
 }
 
+/* Gradient type controls */
 .gradient-container {
   display: inline-block; 
   width: 33%;
@@ -123,6 +125,7 @@ Navigation
   padding: 0 2rem;
 }
 
+/* Color Pickers */
 .color-container {
   display: inline-block;
   width: 33%;
