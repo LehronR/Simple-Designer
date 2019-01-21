@@ -145,14 +145,15 @@ Navigation
   margin: 2rem;
 }
 
-.gradient-pos-header {
+/* gradient direction */
+.gradient-dir-header {
   font-size: 1.6rem;
   font-weight: 100;
   margin-bottom: 2rem;
   border: solid 1px #333;
 }
 
-.gradient-pos-container {
+.gradient-dir-container {
   display: inline-block;
   width: 33%;
   border: solid 1px #555;
@@ -160,5 +161,40 @@ Navigation
   text-align: center;
 }
 
+.grad-dir-label{
+  display: block;
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+}
+
+.custom-selector{
+  width: 50%;
+  margin: 0 auto;
+}
+
+.custom-selector .direction-opts{
+  padding: .5rem 5rem;
+  font-size: 1.2rem;
+  letter-spacing: .05rem;
+  background: #555;
+  color: white;
+  appearance: none;
+  border: none;
+  border-radius: .5rem;
+}
 
 
+/******************** 
+ Javascript use only
+********************/
+/* Gradient Controls */
+
+
+
+/*************** 
+ Color Controls
+***************/
+/* Color B */
+.color-b-display {
+  display: none;
+}
