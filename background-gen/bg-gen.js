@@ -21,13 +21,12 @@ const direction = {
 } 
 
 // App Start function
-function init() {
+const init = () => {
   solid.checked = true;
   solidFunction();
   colorA.value = '#044A54';
   display.style.background = `${colorA.value}`;
 };
-
 
 // background controls conditional statements
 // conditions for solid gradients
