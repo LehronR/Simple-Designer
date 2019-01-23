@@ -35,7 +35,7 @@ const solidFunction = function() {
   linear.value = 'off';
   radial.value = 'off';
   colorB.style.display = 'none';
-  selector.style.display = 'none';
+  selector.style.visibility = 'hidden';
   
   if(solid.value === 'on') {
     linear.value = 'off';
@@ -50,7 +50,7 @@ const linearFunction = function() {
     linear.value = 'on';
     radial.value = 'off';
     colorB.style.display = 'inline-block';
-    selector.style.display = 'inline-block';
+    selector.style.visibility = 'visible';
     
     if(linear.value === 'on' && selector.selectedIndex === 0) {
       solid.value = 'off';
@@ -98,7 +98,7 @@ const radialFunction = function() {
     radial.value = 'on';  
     colorB.style.display = 'inline-block';
     selector.selectedIndex = 1;
-    selector.style.display = 'none';
+    selector.style.visibility = 'hidden';
 
     if(radial.value === 'on' && selector.selectedIndex === 0) {
       solid.value = 'off';
