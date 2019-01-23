@@ -132,7 +132,7 @@ body {
 }
 
 .bg-code-wrapper {
-  display: grid;
+  display: none;
   grid-area: bgcwrap;
   grid-gap: 1rem;
   align-content: flex-end;
@@ -195,6 +195,14 @@ body {
   grid-area: bgcode;
   align-content: center;
 }
+
+/* .toggle-on {
+  display: grid;
+}
+
+.toggle-off {
+  display: none;
+} */
 
 /*************** 
   GUI Controls

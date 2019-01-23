@@ -139,7 +139,7 @@ const radialFunction = function() {
     }
 }
 
-// Conditionals for colors
+// Conditional for colors
 const colorAndDirectionFunction = function() {
     if(solid.value === 'on'){
       solidFunction();
@@ -149,14 +149,46 @@ const colorAndDirectionFunction = function() {
       radialFunction();
     }
 }
-  
-  
-// Color Picker Controls
+
+// Generate code, copy and close button functionality
+const generateCode = document.getElementById('gen-code');
+const closeBtn = document.getElementById('close');
+const copyBtn = document.getElementById('copy');
+const codeGenWrapper = document.getElementById('code-gen-wrapper');
+const textArea = document.getElementById('code');
+
+const generateCodeBtn = function() {
+  if(generateCode.style.display = 'grid') {
+    generateCode.style.display = 'none';
+    codeGenWrapper.style.display = 'grid';
+  } 
+  textArea.textContent = `background: ${display.style.background};`
+}
+
+const closeCodeBtn = function() {
+  if(codeGenWrapper.style.display = 'grid') {
+    generateCode.style.display = 'grid';
+    codeGenWrapper.style.display = 'none';
+  }
+}
+
+// Code Copy to Clipboard functionality
+const copyCode = function() {
+  textArea.select();
+  document.execCommand('copy');
+  alert('code saved to clipboard');
+}
+  copyBtn.addEventListener('click', copyCode);
+// GUI Controls Event Listeners
 colorA.addEventListener('input', colorAndDirectionFunction);
 colorB.addEventListener('input', colorAndDirectionFunction);
 solid.addEventListener('click', solidFunction);
 linear.addEventListener('click', linearFunction);
 radial.addEventListener('click', radialFunction);
 selector.addEventListener('change', colorAndDirectionFunction);
+
+// Code Generator Event Listeners
+generateCode.addEventListener('click', generateCodeBtn);
+closeBtn.addEventListener('click', closeCodeBtn);
 
 init();
